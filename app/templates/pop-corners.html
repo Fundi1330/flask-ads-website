@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ popcorners.name }}</h1>
+    <p>{{ popcorners.description }}</p>
+    <img src="{{url_for('static', filename='pop-corners.png')}}" alt={{ popcorners.name }}>
+{% endblock %}

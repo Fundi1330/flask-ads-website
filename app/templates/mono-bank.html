@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{{ monobank.name }}</h1>
+    <p>{{ monobank.description }}</p>
+    <img src="{{url_for('static', filename='mono-bank.jpg')}}" alt={{ monobank.name }} height="350">
+{% endblock %}
